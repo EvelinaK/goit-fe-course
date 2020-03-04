@@ -24,6 +24,7 @@ ul, ol{
 .nav-item{
     display: inline-block;
     vertical-align:middle;
+    text-transform: uppercase;
 
 }
 
@@ -54,12 +55,8 @@ ul, ol{
     display: inline-block;
     vertical-align: middle;
     width: 50%;
-    padding: 0 30px 30px;
+    padding: 80px 30px 45px 30px;
     letter-spacing: 0;
-}
-.sub-card{
-
- padding-bottom: 90px; 
 }
 
 h2{
@@ -68,7 +65,7 @@ h2{
 
 
 @font-face{
-    font-family:'Playfair-Display' ;
+    font-family:'Playfair Display' ;
     src:url(fonts/PlayfairDisplay-VariableFont_wght.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -82,29 +79,28 @@ h2{
 } 
 
 body{
-    font-family: 'Playfair-Display';
+    font-family: 'Playfair Display';
     font-size: 14px;
     line-height: 1.72;
     color: #626262;
 }
 
-
 .card-img{
     margin-bottom: 30px;
 }
 
-.card .category-link{
+.category-link{
+    font-family: 'Unbuntu Light';
     text-decoration: none;
     color: #b4ad9e;
     text-transform: uppercase;
-
 }
 
 .card h2{
     font-size: 30px;
     margin: 30px 0;
-
 }
+
 .card h2 a{
     font-size: 30px;
     color: inherit;
@@ -112,13 +108,12 @@ body{
 
 
 .nav-link:hover,
-.nav-link:focus,
-.nav-link.active{
+{
     color:#03a9f4;
 }
 
 #header{
-    padding: 75px 75px 100px;
+    padding: 75px 75px 25px;
     
 }
 #nav{
@@ -128,30 +123,25 @@ body{
 }
 
 
-footer{
-    padding: 45px 45px 25px;
-}
- .footer-button {
+ .button { 
+    display: block; 
     margin: 0 auto;
-    border-style: solid;
-    border-width:thin;
+    border: solid  black ;
+    border-width:thin; 
     height: 60px;
     width: 160px;
     padding: 10px; 
     text-align: center;
+    font-family:'Playfair Display';
     font-size: 20px;
-} 
-
- a.button {
- text-decoration: none;
- color: #626262;
- display: block;
+    background-color:white ;
+    color: #626262;
 }
-
-
+.section-content{
+padding-bottom: 70px;
+}
 
 .nav-link{
     color: inherit;
-    text-decoration: none; 
-    
+    text-decoration: none;     
 }

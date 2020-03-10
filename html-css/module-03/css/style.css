@@ -107,7 +107,7 @@ body{
 }
 
 
-.nav-link a:hover{
+.nav-link:hover{
  color: #03a9f4;
 }
 

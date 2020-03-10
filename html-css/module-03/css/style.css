@@ -72,7 +72,7 @@ h2{
 } 
 
 @font-face{
-    font-family:'Ubuntu' ;
+    font-family:'Ubuntu';
     src:url(fonts/Ubuntu-Light.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -91,7 +91,6 @@ body{
 
 .category-link{
     font-family: 'Unbuntu';
-    font-style: light;
     text-decoration: none;
     color: #b4ad9e;
     text-transform: uppercase;

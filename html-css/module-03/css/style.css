@@ -90,7 +90,8 @@ body{
 }
 
 .category-link{
-    font-family: 'Unbuntu Light';
+    font-family: 'Unbuntu';
+    font-style: light;
     text-decoration: none;
     color: #b4ad9e;
     text-transform: uppercase;

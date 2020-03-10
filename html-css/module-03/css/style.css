@@ -106,7 +106,10 @@ body{
     color: inherit;
 }
 
-
+.nav-link{
+    color: inherit;
+    text-decoration: none;     
+}
 .nav-link:hover{
  color: #03a9f4;
 }
@@ -140,7 +143,3 @@ body{
 padding-bottom: 70px;
 }
 
-.nav-link{
-    color: inherit;
-    text-decoration: none;     
-}

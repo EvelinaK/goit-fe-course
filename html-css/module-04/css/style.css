@@ -89,11 +89,9 @@ img{
     max-width: 1140px;
     padding:0 15px ;
     margin: 0 auto;
-    overflow: hidden;
 }
 
 .card-list{
-    overflow: hidden;
     margin: 0 -15px;
 }
 
@@ -119,32 +117,22 @@ img{
     position: relative;
 }
 
-.card-img img{
-    position: relative;
-    top: 50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-
 
 .card-footer{
     position: relative;
-    overflow: hidden;
     color: #ffffff;
     background: #323232;
     font-family: 'Roboto';
     font-weight:600;
     text-decoration: none;
-   height: 40px;
-   overflow: hidden;
+    height: 40px;
 }
 
 .card-name{
     text-transform: uppercase;
-    text-transform: uppercase;
     position: relative;
-    top: 25%;
-    left: 5%;
+    line-height: 2.5;
+    padding-left: 5%;
 }
 
 .card-price{
@@ -162,13 +150,12 @@ img{
     position: relative;
     text-align: center;
     text-transform: uppercase;
-    margin-top: 95px;
+    margin-top: 60px;
     font-family: "Roboto-Black",sans-serif;
     font-size: 34px;
     color: #515151;
     font-weight: 600;
     line-height: 1;
-    margin: 90px 0 50px;
     padding-bottom: 36px;
 }
 
@@ -183,12 +170,10 @@ img{
 
 .inform{
     position: relative;
-    overflow: hidden;
     padding-top: 30px;
 }
 
 .information{
-    overflow: hidden;
     margin: 0 -15px;
 }
 
@@ -247,7 +232,7 @@ h3{
     padding-bottom: 16px;
     font-family:  "Open sans";
     font-size: 14px;
-    letter-spacing: 1;
+    letter-spacing: 1px;
 }
 .button{
     display: block;

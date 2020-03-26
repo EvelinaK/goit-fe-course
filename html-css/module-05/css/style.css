@@ -94,8 +94,11 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-
+    background-image:url(../image/homework-05.png);
 }
+
+
+
 #active-slide {
     width: 100%;
     display: table;
@@ -112,8 +115,10 @@
     height: auto;
 }
 
-.slide{
+.slide-container{
     margin: 0;
+    width: 1170px;
+    height: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,48 +134,43 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.52);
+     background-color: rgba(0, 0, 0, 0.52); 
     } 
  
-
-
- #left{
+.but{
     display: block;
-    transform: translate(-240%, -20%); 
-    margin: auto;
     position: absolute;
-    background-color: #1abc9c;
-    height: 105px;
-    opacity: 0.5;
-    width: 105px;
-    outline: none !important;
-    font-size: 100px;
-    color:white;
+    top: 0;
+     left: 40%; 
+    margin: auto;
+    transform: translate(-400%); 
+     background-color: #1abc9c;
+     border: none;
+     height: 105px;
+     opacity: 0.5;
+     width: 105px;
+     outline: none !important;
+     font-size: 100px;
+     color:white;   
 }
+.pe-7s-angle{
+    font-size: 40px;
+}
+.right{
+    position: absolute;
+    transform: translateX(500%); 
+} 
 
 
-#right:hover,
-#left:hover
+.right:hover,
+.left:hover
 {
    opacity: 1;
 }
 
-#right{
-    display: block;
-    transform: translate(750%,-21%); 
-    margin: auto;
-    position: absolute;
-    overflow: hidden;
-    background-color: #1abc9c;
-    height: 105px;
-    opacity: 0.5;
-    width: 105px;
-    outline: none !important; 
-    font-size: 100px;
-    color:white;
-}
 
-.title-nav h2{
+.title-slide h2{
+    display: block;
     font-size:50px;
     color: white;
     text-transform: uppercase;
@@ -178,7 +178,7 @@
     font-weight: 600;
 }
 
- .title-nav a{
+ .title-slide a{
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
@@ -187,31 +187,6 @@
     font-weight: 300;
     font-size: 18px;
  }
-
- #prewbutton, #nextbutton {
-    display:block;
-    width:50px;
-    height:50px;
-    position:absolute;
-    text-indent:-999px;
-    opacity:0.5; 
-    z-index:3;
-    outline:none !important;
-}
-
-#prewbutton {
-    left:10px;
-  
-}
-
-#nextbutton {
-    right:10px;
-}
-
-#prewbutton:hover, #nextbutton:hover {
-    opacity:1;
-}
- 
 
 
 .footer-cont{
@@ -420,6 +395,8 @@ img{
     font-weight:600;
     text-decoration: none;
    height: 40px;
+   text-align: center;
+   line-height: 2.5;
 }
 
 .card-name{

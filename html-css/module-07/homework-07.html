@@ -41,12 +41,12 @@
         <div class="container">
           <div class="article-wrap">
             <h3 class="sub-tile">servises</h3>
-            <span class="main-title">Proin iaculis purus consequat sem cure.</span>
+            <p class="main-title">Proin iaculis purus consequat sem cure.</p>
           </div>
           <div class="servis-wrap">
             <div class="item-servis">
-              <div class="article">
-                <div class="figure i1"></div>
+              <div class="article i1">
+             
                 <h2 class="servis-title">seo</h2>
                 <p class="servis-p">
                   Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
@@ -55,8 +55,8 @@
               </div>
             </div>
             <div class="item-servis">
-              <div class="article">
-                <div class="figure i2"></div>
+              <div class="article i2">
+              
                 <h2 class="servis-title">photography</h2>
                 <p class="servis-p">
                   Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
@@ -65,8 +65,8 @@
               </div>
             </div>
             <div class="item-servis">
-              <div class="article">
-                <div class="figure i3"></div>
+              <div class="article i3">
+             
                 <h2 class="servis-title">digital</h2>
                 <p class="servis-p">
                   Lorem ipsum dolor sit amet, consec tetur adipisicing elit.
@@ -79,21 +79,21 @@
             <section class="contact">
               <div class="container">
                 <h4 class="title-cont">Contact Us</h4>
-                  <span class="main-title">Proin iaculis purus consequat sem cure.</span>
+                  <p class="cont-title">Proin iaculis purus consequat sem cure.</p>
                 <form action="#">
                   <fieldset>
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="control-label required" placeholder="Your name *" required ="true"/>
-                        <input type="email" class="control-label required"  placeholder="Your email *" required ="true"/>
-                        <input type="text" placeholder="Subject"/>
+                        <input type="name"  name="name" pattern="[a-zA-Z]+" placeholder="Your name *" required>
+                        <input type="email" name="email" pattern=".+@company\.com" placeholder="Your email *" required>
+                        <input type="text" name="text" placeholder="Subject"/>
                       </div>
                       <div class="col">
-                        <textarea  class="l control-label required" required placeholder="Your message *"></textarea>
+                        <textarea type="textarea" name="textarea"  placeholder="Your message *" required></textarea>
                       </div>
                     </div>
                     <div class="btn-box">
-                      <button type="submit">Submit</button>
+                      <button class="btn-form" type="submit">Send message</button>
                     </div>
                   </fieldset>
                 </form>

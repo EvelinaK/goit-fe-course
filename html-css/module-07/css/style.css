@@ -91,13 +91,6 @@ html {
        url('../fonts/arizonia-v10-latin-regular.svg#Arizonia') format('svg'); /* Legacy iOS */
 }
 
-@font-face {
-  font-family: 'Wisdom Script Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Wisdom Script Regular'), url('Wisdom Script AJ.woff') format('woff'), 
-  url('../fonts/Wisdom\ Script\ AJ.woff') format('woff');
-}
 
 
 
@@ -121,9 +114,9 @@ html {
 /* navigation */
 
 .logo {
-  font-family:'Wisdom Script Regular';
+  font-family:'Arizonia';
   font-weight: 700;
-  font-size: 26px;
+  font-size: 40px;
   color: #fed136;
   text-decoration: none;
 }
@@ -143,6 +136,7 @@ html {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  line-height: 0.1;
   min-height: 50px;
   padding-bottom: 30px;
 }
@@ -166,6 +160,21 @@ html {
 
 /* sections servis  */
 
+
+.article-wrap {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+   padding: 70px 0; 
+}
+.article-wrap h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .servis-wrap {
   display: flex;
   flex-wrap: nowrap;
@@ -175,36 +184,16 @@ html {
 }
 
 .item-servis {
-  position: relative;
   display: flex;
+
   width: 350px;
    margin-bottom: 100px; 
 }
 
-
-
 .article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 50px;
-  text-align: center;
+text-align: center;
 }
 
-.article-wrap {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-   padding: 70px 0; 
-
-}
-.article-wrap h3 {
-  font-family: 'Monserrat';
-  font-weight: 600;
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-}
 
  .main-title {
   font-family: 'Averia Gruesa Libre';
@@ -218,7 +207,7 @@ html {
 
 .servis-title {
   padding: 20px;
-  font-family:'Monserrat';
+  font-family:'Montserrat';
   font-weight: 600;
   font-size: 18px;
   color: black;
@@ -232,38 +221,28 @@ html {
 }
 
 
-.figure{
+.article::before {
+  margin: 0 auto;
+  content: "";
   display: flex;
-  position: relative;
   width: 70px;
   height: 70px;
   border-radius: 50%;
   border: 3px solid #fed136;
-}
-.figure::after {
-  margin: 0 auto;
-  content: "";
-  display: flex;
-  align-self: center;
-  content: "";
-  height: 50px;
-  width: 50px;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.i1::after {
+.i1::before {
   background-image: url(../image/Безимени-1.png);
-
 }
 
-.i2::after {
+.i2::before {
   background-image: url(../image/Безимени-3.png);
 
 }
-.i3::after {
+.i3::before {
   background-image: url(../image/Безимени-4.png);
- 
 }
 
 /* 
@@ -281,18 +260,43 @@ section  */
   padding-top: 100px;
   padding-bottom: 20px;
 }
-
+.cont-title {
+  font-family: 'Averia Gruesa Libre';
+  display: flex;
+  justify-content: center;
+  font-family: 'Averia';
+  font-weight: 400;
+  color: #777777;
+  font-size: 16px;
+  margin-bottom: 70px;
+}
 
 
 
 .contact{
-  background-image: url(../image/homework-07-\(1\).jpg);
+  background-color: #222222;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 678px;
+  height: auto;
   max-width: 100%;
-} 
+  z-index: 0;
+  position: relative;
+}
+
+.contact::before{
+  margin: 0 auto;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+   z-index: -5; 
+   width: 630px;
+   height: 585px;
+  background-image: url(../image/homework-07-\(1\).png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 form,
@@ -302,9 +306,9 @@ fieldset {
   padding: 0;
 }
 
-input[type="text"],
+input[type="name"],
 input[type="email"],
-input[type="submit"],
+input[type="text"],
 textarea {
   height: 52px;
   padding: 18px 10px;
@@ -321,33 +325,32 @@ textarea {
 
 
 
-input[type="text"]::-webkit-input-placeholder,
+input[type="name"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
-input[type="submit"]::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   color:#c0c0c0;
   font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 600;
   text-transform: uppercase;
   
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="submit"]:focus,
-textarea:focus {
- border-color: blue;
-}
+  
+ input[type="name"]:invalid:not(:placeholder-shown),
+input[type="email"]:invalid:not(:placeholder-shown),
+input[type="text"]:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color:red; 
 
-input[type="text"]:invalid,
-input[type="email"]:invalid,
-input[type="submit"]:invalid,
-textarea:invalid {
- border-color:red;
-}
+} 
 
-input:valid{
-  border-color: chartreuse;
+
+input:valid:not(:placeholder-shown) {
+  border-color: green;
 }
+   
 
 textarea {
   height: 210px;
@@ -362,18 +365,28 @@ textarea {
 }
 
 .col {
-  /* width: 50%; */
   width: 455px;
   padding: 0 15px;
 }
 
-input[type="text"]:required,
-input[type="email"]:required,
-textarea:required{
 
+
+.btn-box{
+  display: flex;
+  justify-content: center; 
 }
 
-
+.btn-form{
+  padding: 22px 45px;
+  border-radius: 4px;
+  background-color: #fed136;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+ text-transform: uppercase;
+ color: white;
+ border:none ;
+}
 
 
 

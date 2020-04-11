@@ -19,6 +19,28 @@ html {
   margin: 0 auto;
 } 
 
+
+
+/* @media(min-width 768%){
+   .container{
+  max-width: 530px;
+}
+}
+@media(min-width:992px){
+
+.container{
+  max-width: 940px;
+}
+}
+
+@media (min-width:1200px){
+  .container{
+    max-width: 940px;
+  }
+} */
+
+
+
  #header {
     position: absolute; 
   top: 0;
@@ -174,6 +196,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
+   /* margin: 0 auto; */
 }
 
 .foto-li {
@@ -248,7 +271,6 @@ a{
   font-size: 14px;
   text-align: center;
   width: 200px;
-  margin-bottom: 40px;
 }
 
 .next-button {
@@ -285,13 +307,14 @@ button:focus {
 } 
 
 
+
 @media(min-width:768px) {
 
    .container {
     max-width: 660px;
     margin: 0 auto;
   } 
-  
+   
 
   .banner {
  height: 700px;
@@ -313,9 +336,10 @@ button:focus {
 
 }
 
+
 @media(min-width:1400px) {
 
-   .container {
+    .container {
       margin: 0 auto;
       max-width: 950px;
   } 
@@ -328,3 +352,35 @@ button:focus {
 
 
 
+/* 
+.container {
+ 
+  @media (max-width: 768px) {
+    @include container(660px);
+  }
+  @media (min-width: 1400px) {
+    @include container(950px);
+  }
+}  
+ $ grid-breakpoints: ( 
+  md: 768px , 
+  xl: 1400px
+ ); 
+
+$ container-max- widths : ( 
+  md: 660px,
+   xl: 950px
+ );
+ */
+/* 
+ $grid-breakpoints: (
+md: 768px,
+xl: 1400px
+)!default;;
+
+$container-max-widths: (
+md: 660px,
+xl: 950px
+)!default;; 
+
+ */

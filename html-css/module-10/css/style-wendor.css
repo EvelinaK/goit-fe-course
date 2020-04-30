@@ -247,6 +247,7 @@
 .banner-button__find-link:hover {
     /* border: solid 2px white; */
     background-color: #f6a1a1;
+    cursor: pointer;
 }
 
 
@@ -598,7 +599,8 @@ input[type="submit"] {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 14px;
-    border: none;
+    border: 1px solid #95e1d3;
+    cursor: pointer;
 }
 
 input[type="email"] {

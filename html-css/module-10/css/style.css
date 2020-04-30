@@ -456,6 +456,7 @@ section portfolio */
         display: flex;
         align-self: flex-start;
         color: #f6a1a1;
+        padding-left: 5px;
     }
     
     form,
@@ -473,7 +474,7 @@ section portfolio */
         font-family: 'Montserrat';
         font-weight: 700;
         font-size: 14px;
-        border: none;
+        border: 1px solid #95e1d3;
     }
     
     input[type="email"] {

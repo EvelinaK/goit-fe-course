@@ -155,8 +155,8 @@
 (-o-min-device-pixel-ratio: 2/1),
 (min-resolution: 192dpi) {
     .banner {
-        background-size: cover;
         background: url('../image/banner2-2@2x-min.png') no-repeat;
+        background-size: cover;
     }
 }
 

@@ -168,24 +168,15 @@
         margin-bottom: 60px;
     }
     
-    .banner-container__first-title {
-        font-family: "montserrat";
-        font-weight: 600;
-        font-size: 150px;
-        align-self: center;
-        padding: 0;
-        margin: 0;
-        color: #ffffff;
-        text-transform: uppercase;
-    }
-    
     .banner-container__secound-title {
         font-family: "montserrat";
         font-weight: 600;
         font-size: 150px;
-        align-self: center;
+        max-width: 60%;
+        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
         padding: 0;
-        margin: 0;
         color: #ffffff;
         text-transform: uppercase;
         margin-bottom: 125px;

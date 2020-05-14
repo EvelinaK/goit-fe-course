@@ -13,7 +13,7 @@
     font-family: $main-card-tile;
     font-weight: 400;
     font-size: 14px;
-    color: black;
+    color: $text-black-color;
     text-transform: uppercase;
     padding-bottom: 15px;
 }
@@ -25,5 +25,5 @@
     font-style: italic;
     font-weight: 300;
     font-size: 15px;
-    color: #a6a6a6;
+    color: $decorations-grey;
 }

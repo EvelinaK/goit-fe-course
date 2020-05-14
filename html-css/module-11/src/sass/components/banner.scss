@@ -1,9 +1,9 @@
-.banner {
+.banner-section {
     position: relative;
     display: flex;
     height: 1000px;
     width: 100%;
-    background-image: url('./images/banner1-1@1x-min.png');
+    background-image: url('../images/banner1-1@1x-min.png');
     background-color: black;
     background-position: center;
     &::after {

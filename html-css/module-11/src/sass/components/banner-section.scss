@@ -17,7 +17,7 @@
 //         background: linear-gradient(180deg, rgba(243, 129, 129, 0.75) 0%, rgba(252, 227, 138, 0.75) 100%);
 //     }
 // }
-..banner-section {
+.banner-section {
     position: relative;
     display: flex;
     height: 1000px;
@@ -27,6 +27,6 @@
     @include bg-image($path: '../images/banner1-1@1x-min.png', $size: cover, $repeat: no-repeat, $pos: center);
     &::after {
         @extend %absoluteCoverPseudo;
-        background: linear-gradient(180deg, rgba($secound-color-accent) 0%, rgba($secound-color-accent) 100%);
+        background: linear-gradient(180deg, rgba($secound-color-accent, .8) 0%, rgba($main-color-accent, .8) 100%);
     }
 }

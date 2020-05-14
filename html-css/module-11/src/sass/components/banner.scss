@@ -1,0 +1,30 @@
+.banner {
+    position: relative;
+    display: flex;
+    height: 1000px;
+    width: 100%;
+    background-image: url('../image/banner1-1@1x-min.png');
+    background-color: black;
+    background-position: center;
+    &::after {
+        content: "";
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(243, 129, 129, 0.75) 0%, rgba(252, 227, 138, 0.75) 100%);
+    }
+}
+
+// .banner::after {
+//     content: "";
+//     position: absolute;
+//     z-index: 0;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: linear-gradient(180deg, rgba(243, 129, 129, 0.75) 0%, rgba(252, 227, 138, 0.75) 100%);
+// }

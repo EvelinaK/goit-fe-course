@@ -1,0 +1,8 @@
+.header-logo {
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 30px;
+    color: $nav-white-color;
+    text-decoration: none;
+    @extend %link;
+}

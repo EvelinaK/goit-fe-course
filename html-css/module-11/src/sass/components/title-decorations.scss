@@ -1,0 +1,36 @@
+ .title-decorations {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     padding: 70px 0;
+ }
+ 
+ .title-decorations__main-tile {
+     font-family: $secound-font;
+     font-size: 24px;
+     font-weight: 400;
+ }
+ 
+ .title-decorations__sub-title {
+     font-family: $main-font;
+     font-weight: 700;
+     font-size: 30px;
+     text-align: center;
+     text-transform: uppercase;
+     &::after {
+         margin: 0 auto;
+         content: "";
+         display: block;
+         height: 4px;
+         width: 60px;
+         margin-top: 42px;
+         margin-bottom: 42px;
+         background-color: $secound-color-accent;
+     }
+ }
+ 
+ .title-decorations__text {
+     font-family: $main-card-text;
+     font-weight: 400;
+     color: $decorations-grey;
+ }

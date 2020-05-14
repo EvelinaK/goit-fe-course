@@ -1,0 +1,13 @@
+.banner-button__find-link {
+    display: inline-block;
+    color: $nav-white-color;
+    padding: 10px 25px;
+    border: solid 2px $nav-white-color;
+    font-weight: 600;
+    font-size: 14px;
+    font-family: $main-card-tile;
+    &:hover,
+    &:focus {
+        background-color: $secound-color-accent;
+    }
+}

@@ -1,0 +1,43 @@
+.portfolio {
+    position: relative;
+}
+
+.portfolio__img-foto {
+    display: block;
+}
+
+.portfolio__icon-gradient {
+    @include center-flex($type: 'all');
+    @extend %list;
+    @extend %link;
+    height: 58px;
+    width: 58px;
+    border: none;
+    margin-right: 1px;
+    background-color: $main-color-accent;
+    &:hover {
+        background-color: $secound-color-accent;
+    }
+    &:hover .portfolio__icon-socials {
+        fill: $nav-white-color;
+        transition: fill 0.1s linear;
+    }
+}
+
+// .portfolio__icon-gradient:hover .portfolio__icon-socials {
+//     fill: #ffffff;
+//     transition: fill 0.1s linear;
+// }
+.portfolio__icon-socials {
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    fill: $secound-color-accent;
+    &:hover {
+        display: block;
+        text-align: center;
+        width: 35px;
+        height: 35px;
+    }
+}

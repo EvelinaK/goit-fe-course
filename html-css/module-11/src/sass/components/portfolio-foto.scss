@@ -1,0 +1,29 @@
+    .portfolio-foto {
+        width: 380px;
+        height: 470px;
+        position: relative;
+        padding-bottom: 30px;
+        &:hover .portfolio-card_foto {
+            transform: translate(-10px, -13px);
+            transition-duration: 200ms;
+            transition-timing-function: linear;
+            box-shadow: 10px 13px 1px 1px rgba(158, 255, 211, 1);
+            transition-timing-function: linear;
+            box-shadow: 10px 13px 1px 1px rgba(158, 255, 211, 1);
+        }
+        &:hover .portfolio-overlay {
+            visibility: visible;
+        }
+    }
+    
+    // .portfolio-foto:hover .portfolio-card_foto {
+    //     transform: translate(-10px, -13px);
+    //     transition-duration: 200ms;
+    //     transition-timing-function: linear;
+    //     box-shadow: 10px 13px 1px 1px rgba(158, 255, 211, 1);
+    //     transition-timing-function: linear;
+    //     box-shadow: 10px 13px 1px 1px rgba(158, 255, 211, 1);
+    // }
+    // .portfolio-foto:hover .portfolio-overlay {
+    //     visibility: visible;
+    // }

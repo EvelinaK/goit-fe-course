@@ -1,0 +1,46 @@
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    @extend %list;
+}
+
+.site-navigation__link {
+    @extend %link;
+    font-family: $main-font;
+    font-weight: 400;
+    color: $nav-white-color;
+    font-size: 15px;
+    position: relative;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    &::after {
+        display: block;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 3px;
+        background-color: $main-color-accent;
+        opacity: 0;
+        bottom: 0;
+        visibility: hidden;
+    }
+    &:hover::after {
+        visibility: visible;
+        opacity: 1;
+        color: $main-color-accent;
+    }
+    &:hover {
+        color: $main-color-accent;
+    }
+}
+
+.site-navigation__icon {
+    display: block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    fill: $nav-white-color;
+    &:hover {
+        fill: $main-color-accent;
+    }
+}

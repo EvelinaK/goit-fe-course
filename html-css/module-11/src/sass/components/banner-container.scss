@@ -1,0 +1,32 @@
+   .banner-container * {
+       z-index: 2;
+   }
+   
+   .banner-container {
+       @include center-flex('all');
+       margin: 0 auto;
+       flex-direction: column;
+   }
+   
+   .banner-container__main-title {
+       font-family: $secound-font;
+       font-weight: 500;
+       font-size: 72px;
+       color: $nav-white-color;
+       padding: 0;
+       margin-bottom: 60px;
+   }
+   
+   .banner-container__secound-title {
+       font-family: $main-font;
+       font-weight: 600;
+       font-size: 150px;
+       max-width: 60%;
+       text-align: center;
+       display: flex;
+       flex-wrap: nowrap;
+       padding: 0;
+       color: $nav-white-color;
+       text-transform: uppercase;
+       margin-bottom: 125px;
+   }

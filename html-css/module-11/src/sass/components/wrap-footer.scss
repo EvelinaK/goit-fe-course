@@ -1,0 +1,57 @@
+.wrap-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid $footer-border-color;
+    margin: 10px;
+}
+
+.wrap-footer__copyrite {
+    display: flex;
+    font-family: $main-card-tile;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.wrap-footer__red-copy {
+    display: flex;
+    align-self: flex-start;
+    color: $secound-color-accent;
+    padding-left: 5px;
+}
+
+form,
+input {
+    height: 40px;
+    line-height: 1;
+}
+
+input[type="submit"] {
+    padding: 0 20px;
+    width: 150px;
+    margin-left: -1px;
+    background-color: $footer-main-color;
+    color: $nav-white-color;
+    font-family: $main-card-tile;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid $footer-main-color;
+}
+
+input[type="email"] {
+    padding: 0 20px;
+    margin-right: -4px;
+    width: 230px;
+    color: black;
+    font-family: $main-card-text;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+    border: 1px solid $footer-border-color;
+}
+
+input[type="submit"]:hover {
+    background-color: $footer-main-color;
+    cursor: pointer;
+}

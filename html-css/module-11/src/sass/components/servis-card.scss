@@ -1,0 +1,27 @@
+.servis-card {
+    position: relative;
+    display: flex;
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.servis-card_article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.servis-card_title {
+    padding-bottom: 20px;
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $text-black-color;
+    text-transform: uppercase;
+}
+
+.servis-card_text {
+    font-family: $main-card-text;
+    font-weight: 400;
+    color: $decorations-grey;
+}

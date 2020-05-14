@@ -1,0 +1,11 @@
+.header-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    min-height: 50px;
+    padding-bottom: 30px;
+}
+
+.header-nav__site-navigation {
+    width: 620px;
+}

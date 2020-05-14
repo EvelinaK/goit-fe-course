@@ -1,0 +1,29 @@
+.portfolio-foo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 80px;
+}
+
+.portfolio-foo--name {
+    @extend %link;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-card-tile;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+.portfolio-foo--sub {
+    @include center-flex($type: 'all');
+    @extend %link;
+    font-family: $main-card-text;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 15px;
+    color: #555252;
+}
